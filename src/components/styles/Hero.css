@@ -1,0 +1,36 @@
+.hero {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 900; 
+  color: #1e293b;
+  text-transform: uppercase;  /* Optional for stronger impact */
+}
+
+
+.hero-text {
+  font-size: 18px;
+  color: #666;
+  margin-top: 12px;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 14px 22px;
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btn:hover {
+  background-color: #162d6b;
+}

@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.navbar-title span {
+  color: #000; /* Makes 'Connect' black */
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.login {
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;
+}
+
+.login:hover {
+  border-color: #666;
+}
+
+.signup {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.signup:hover {
+  background-color: #162d6b;
+}
