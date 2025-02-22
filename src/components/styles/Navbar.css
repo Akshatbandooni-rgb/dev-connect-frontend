@@ -1,51 +1,73 @@
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar-title {
-  font-size: 24px;
+  padding: 15px 50px;
+  background-color: #0f0f0f;
+  color: #fff;
   font-weight: bold;
-  color: #1e3a8a;
+  font-size: 18px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-title span {
-  color: #000; /* Makes 'Connect' black */
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
-.navbar-buttons {
+/* Buttons */
+.nav-buttons {
   display: flex;
-  gap: 12px;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  .login-btn,
+  .signup-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
-.btn {
-  padding: 10px 18px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: 500;
-  border-radius: 6px;
-}
-
-.login {
-  border: 1px solid #ccc;
-  background: white;
-  color: #333;
-}
-
-.login:hover {
-  border-color: #666;
-}
-
-.signup {
-  background-color: #1e3a8a;
+/* Login button */
+.login-btn {
+  background: none;
   color: white;
 }
 
-.signup:hover {
-  background-color: #162d6b;
+.login-btn:hover {
+  background: white;
+  color: #0f0f0f;
+}
+
+/* Start Now button */
+.signup-btn {
+  background: #ffcc00;
+  color: #0f0f0f;
+}
+
+.signup-btn:hover {
+  background: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-buttons {
+    margin-top: 10px;
+  }
 }

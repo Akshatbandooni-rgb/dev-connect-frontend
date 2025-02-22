@@ -1,46 +1,51 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./styles/Login.css";
 
-function Login() {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const login = () => {
-    console.log(email, password);
+    console.log(`Credentails:
+      Email:${email}
+      Password:${password}`);
   };
-
   return (
-    <div className="container">
-      <div className="form-box">
-        <h2 className="title">Login</h2>
-        <div className="field">
-          <label className="label">Email</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="input"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div className="field">
-          <label className="label">Password</label>
-          <input
-            type="password"
-            placeholder="Enter your password"
-            className="input"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <button className="button" onClick={login}>
+    <div className="login-container">
+      <div className="login-box">
+        <h2 className="login-title">Welcome Back</h2>
+        <p className="login-subtitle">Log in to continue</p>
+
+        <label>Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          value={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
+        />
+
+        <button className="login-btn" onClick={login}>
           Login
         </button>
+
+        <p className="signup-text">
+          Dont have an account? <Link to="/signup">Sign up</Link>
+        </p>
       </div>
     </div>
   );
-}
+};
 
 export default Login;

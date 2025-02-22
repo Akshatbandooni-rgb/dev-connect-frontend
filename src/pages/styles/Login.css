@@ -1,53 +1,88 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background-color: #f2f2f2;
+/* Full-screen centered layout */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f0f0f;
 }
 
-.form-box {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+/* Login box */
+.login-box {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+  width: 360px;
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
-.title {
-    margin-bottom: 20px;
-    text-align: center;
+/* Title */
+.login-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-.field {
-    margin-bottom: 15px;
+/* Subtitle */
+.login-subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
 }
 
-.label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+/* Form labels */
+label {
+  display: block;
+  text-align: left;
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
-.input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
 }
 
-.button {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+/* Login button */
+.login-bt {
+  width: 100%;
+  padding: 12px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.3s ease-in-out;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.login-btn:hover {
+  background: #e6b800;
+}
+
+/* Sign up link */
+.signup-text {
+  margin-top: 15px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
 }

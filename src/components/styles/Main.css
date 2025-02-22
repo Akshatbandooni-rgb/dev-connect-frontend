@@ -1,5 +1,6 @@
 .main-container {
-  padding: 0 20px 0px 20px;
-  font-family: "Roboto", serif;
-  font-optical-sizing: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
 }
